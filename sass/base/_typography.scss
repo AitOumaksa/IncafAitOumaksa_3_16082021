@@ -4,10 +4,11 @@ body{
 footer h2{ 
     font-family: 'shrikhand';
 }
+
 .gps-presentation{
     background-color: $colour-bg;
-   @include flexbox;
-}
+    display: flex;
+    flex-direction: column;
 .gps-bar{
     height: 50px;
     display: flex ;
@@ -17,59 +18,45 @@ footer h2{
     background-color: $colour-bg-dark;
 }
 .bloc-heading{
-    @include flexbox;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 20px 0 20px;
     &__primary{
         font-size: $size-title;
         font-weight: $font-weight-title;
-        padding: 37px 66px 15px 66px;
-        min-width: 265px;
+        padding: 37px 0 15px 0;
     }
     &__paragraph{
         font-size: 17px;
         color: rgb(7, 7, 7);
         font-weight: 300;
         padding-bottom: 25px;
-        min-width: 265px;
     }
 }
-/*.btn{
-    border-radius:30px ;
-    padding: 15px;
-    border: none;
-    width: 58.2%;
-    color: $colour-txt-btn;
-    box-shadow:0px 0px 12px 0px  rgb(0 0 0 / 15%);
-    background-image: $gradien;
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 55px;
-    min-width: 219px;
-    cursor: pointer;
-}*/
+}
 .section-function{
-    padding: 50px 0 50px 0;
-    row-gap: $size-title;
+    padding: 50px 20px 50px 20px;
     &__heading{ 
-        padding-left: 30px;
+        font-size: 20px;
         padding-bottom: 25px;
     }
-}
 .function-list{
-    @include flexbox;
-    row-gap: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap:25px;
     counter-reset: numero;
     &__list{
         counter-increment: numero;
         align-self:center ;
-        width: 86.2%;
+        width: 100%;
         border-radius: 20px;
         @include box-shadow ;
         padding: 25px 0px 25px 0px;
         font-weight: 600;
         background-color: #f6f6f6;
-        min-width: 319px;
         position:relative;
         cursor: pointer;
      &::before {
@@ -95,4 +82,59 @@ footer h2{
       margin: 0px 20px 0 30px;
     }
 }
+}
 
+/*section restau*/
+
+.section-restau{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: $colour-bg;
+    gap: 25px;
+    padding: 45px 20px 45px 20px;
+    &__heading{
+        flex:100%;
+        font-size: 20px;
+    }
+    .card-restau{
+       border:white 0px solid;
+       border-radius: 20px;
+       height: 250px;
+       width: 100%;
+       box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%); 
+    .bloc-img{ 
+      position: relative;
+      &__pic{
+      width: 100%;
+      height: 175px;
+      border-radius:20px 20px 0 0 ;
+      object-fit: cover;
+      }
+      &__new{
+        position: absolute;
+        border-radius: 2px;
+        right: 10px;
+        top:15px;
+        background-color: $colour-Tertiary;
+        color: #008766;
+        padding: 5px;
+        }   
+    }
+    .restau-description{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px 0 10px;
+        column-gap: 10px;
+        .description p{
+            font-weight: 300;
+            font-size: 15px;
+            padding-top: 5px;
+        }
+        .favorite i{
+            font-size: 20px;
+        }
+    } 
+    }
+}
