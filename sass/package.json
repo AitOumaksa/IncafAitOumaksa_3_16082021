@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 03",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:../css/style.css",
+    "prefix": "postcss --watch ../css/style.css --use autoprefixer -d ../css/prefixed/"
+  },
+  "author": "Incaf Ait Oumaksa",
+  "license": "ISC",
+  "browserslist":"last 4 versions"
+}

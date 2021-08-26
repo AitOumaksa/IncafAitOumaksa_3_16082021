@@ -1,0 +1,31 @@
+@mixin box_shadow {
+    box-shadow:0px 0px 12px 0px  rgb(0 0 0 / 15%);
+}
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+}
+@mixin btn {
+    @include box_shadow;
+    border-radius:30px ;
+    padding: 15px;
+    border: none;
+    width: 58.2%;
+    color: $colour-txt-btn;
+    background-image: $gradien;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 55px;
+    min-width: 219px;
+    cursor: pointer;
+    
+}
+@mixin name($width,$border-radius,$box-shadow-list,$padding-list, $font-wight,$min-width,$cursor) {
+    width:$width ;
+    border-radius: $border-radius ;
+    box-shadow:$box-shadow-list;
+    padding:$padding-list;
+    font-weight:$font-wight ;
+    min-width:$min-width ;
+    cursor: $cursor;
+}

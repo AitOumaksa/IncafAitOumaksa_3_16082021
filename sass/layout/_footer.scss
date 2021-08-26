@@ -1,0 +1,22 @@
+.footer{
+    background-color:$colour-bg-footer ;
+    height: 200px;
+    padding: 20px 20px 0 20px;
+    &__heading{
+        color: $colour-txt-footer;
+        font-weight: 400;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    li a {
+        color: $colour-txt-footer;
+        i{
+            color:$colour-txt-footer ;
+        }
+    }
+}
