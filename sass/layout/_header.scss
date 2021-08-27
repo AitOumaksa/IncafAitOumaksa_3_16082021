@@ -1,27 +1,27 @@
 .header{
+    position: relative;
     height: 65px;
     width: 100%;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 10px;
-    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
-    &--modif{
-    display: flex;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-right: 55px;
-    }
     &__logo{
         height: 28px;
-        padding-left: 25px;
     }
     &__icone{
         font-size: 20px;
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
     }
 }
 
 
+
+
+//bloc des menu
 .bloc-bg{
   height: 250px;
   width: 100%;
@@ -32,10 +32,13 @@
   }
 }
 .section-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     top: -45px;
     margin-bottom: -45px;
-    background-color:darken( $colour-bg,3.5%);
+    background-color:$colour-bg;
     border-radius: 45px 45px 0 0;
     .heading-restaurant{
         white-space: nowrap;
@@ -48,6 +51,62 @@
        h1{
            font-size: 28px ;
            font-weight: 400;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
        }
+       .favorite i{
+           font-size: 20px;
+       }
+    }
+    .menu{
+        padding:35px 10px 0 10px ;
+        &__type{
+            font-weight: 300;
+            color: darken(#797979,20%);
+            font-size: 15px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: $colour-Tertiary;
+                top:20px;
+                height: 3px;
+                width: 37px
+            }
+        }
+        .choice{
+            box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 8%);
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px 20px 10px 15px;
+            margin: 20px 0 15px 0;
+            &__title{
+                padding-bottom: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 18px;
+            }
+            .ingredient{
+                display: flex;
+                justify-content: space-around;
+                column-gap: 15px;
+                &__type{
+                    flex: 1;
+                    font-weight: 300;
+                    font-size: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .menu-price{
+                    font-weight: bold;
+                }
+            }
+            .menu-check{
+                display: none;
+            }
+        }
     }
 }
