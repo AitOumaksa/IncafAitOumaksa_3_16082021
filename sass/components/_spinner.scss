@@ -1,0 +1,73 @@
+
+
+.loading-spinner{
+  position : fixed;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  background : $colour-primary;
+  animation: loader-page $animation-spinner-duration ease-in-out normal forwards;
+
+  .spinner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -76px 0 0 -76px;
+.spinner__circle {
+   
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #5486a8;
+    animation: spin 2s linear infinite;
+  }
+
+  /* Réglages du bloc de texte général */
+  .spinner__letter { 
+    font-family: "shrikhand";
+    //text-align:center; 
+    white-space:normal; 
+    font-weight:300; 
+    background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); 
+    color:transparent; 
+    background-clip:text; 
+    /* Animations des lettres */
+   
+     span {opacity:0;}
+     @for $i from 1 through $num-char-resto  {
+    .letter0#{$i} {animation:letters $animation-leter-duration ease ($i - 1) * $animation-leter-delay forwards infinite;}
+     }
+  }
+
+}
+}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes loader-page {
+  0% {
+    opacity: 1;
+}
+75% {
+    opacity: 1;
+}
+99% {
+    opacity: 0;
+}
+100% {
+    visibility: hidden;
+    opacity: 0;
+}
+}
+
+
+@keyframes letters {
+	0% {opacity:0;}
+	100% {opacity:1.0;}
+}
+
+
+

@@ -1,0 +1,19 @@
+@import "utils/variable";
+@import "utils/fonction";
+@import "utils/mixins";
+@import "utils/extensions";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/btn";
+@import "components/heart";
+@import "components/index/fonctionnement";
+@import "components/index/localisation";
+@import "components/spinner";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/accueil";
+

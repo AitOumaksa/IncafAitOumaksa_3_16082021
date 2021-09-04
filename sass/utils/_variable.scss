@@ -1,3 +1,5 @@
+
+@use 'sass:math';
 $colour-primary:#9356DC ;
 $colour-secondary:#FF79DA;
 $colour-Tertiary:#99E2D0;
@@ -12,3 +14,10 @@ $gradien:linear-gradient(173deg, $colour-secondary 0%, $colour-primary 90%);
 $box-shadow-btn-funct:  0px 0px 12px 0px rgb(0 0 0 / 15%) ;
 $padding-btn-funct : 25px 0px 25px 0px ;
 $size:50%;
+
+
+//variables spinner
+$animation-leter-duration: 1s;
+$animation-spinner-duration : 3s;
+$num-char-resto:8;
+$animation-leter-delay: math.div($animation-leter-duration, $num-char-resto);

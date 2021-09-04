@@ -1,0 +1,55 @@
+.section-restau{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: $colour-bg;
+    gap: 25px;
+    padding: 45px 20px 45px 20px;
+    &__heading{
+        flex:100%;
+        font-size: 20px;
+    }
+    .card-restau{
+       position: relative;
+       border:$colour-txt-btn 0px solid;
+       background-color:$colour-txt-btn ;
+       border-radius: 20px;
+       height: 250px;
+       width: 100%;
+       box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%); 
+    .bloc-img{ 
+      position: relative;
+      &__pic{
+      width: 100%;
+      height: 175px;
+      border-radius:20px 20px 0 0 ;
+      object-fit: cover;
+      }
+      &__new{
+        position: absolute;
+        border-radius: 2px;
+        right: 10px;
+        top:15px;
+        background-color: $colour-Tertiary;
+        color: #008766;
+        padding: 5px;
+        }   
+    }
+    .restau-description{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px 0 10px;
+        column-gap: 10px;
+        .description p{
+            font-weight: 300;
+            font-size: 15px;
+            padding-top: 5px;
+        }
+        .favorite i{
+            font-size: 20px;
+        }
+    } 
+    }
+}

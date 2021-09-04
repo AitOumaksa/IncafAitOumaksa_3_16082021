@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/fc1e988ec8.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet"  href="css/style.css" />
+        <link rel="stylesheet"  href="css/index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,6 +13,22 @@
         <title>Ohmyfood</title>
     </head>
     <body>
+        <!-- Spinner-->
+    <div class="loading-spinner">
+        <div class="spinner">
+        <div class="spinner__letter">
+                <span class="letter01">o</span>
+                <span class="letter02">h</span>
+                <span class="letter03">m</span>
+                <span class="letter04">y</span>
+                <span class="letter05">f</span>
+                <span class="letter06">o</span>
+                <span class="letter07">o</span>
+                <span class="letter08">d</span>
+        </div>
+        <div class="spinner__circle"></div>
+    </div>
+    </div>
         <!--Header-->
     <header class="header">
         <a href="index.html" ><img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" class="header__logo" /></a>
@@ -36,7 +52,7 @@
     </div> 
             <!--section des fonctionnement-->
             <section class="section-function">
-                <h2 class="section-function__heading">Foncionnement</h2>
+                <h2 class="section-function__heading">Fonctionnement</h2>
                 <ol class="function-list">
                     
                     <li class="function-list__list">
@@ -57,70 +73,82 @@
             <section class="section-restau">
                 <h2 class="section-restau__heading">Restaurants</h2>
                 <article class="card-restau">
-                    <a href="menus/palette.html" class="card-restau__link">
                         <div class="bloc-img">
+                        <a href="menus/palette.html" class="card-restau__link">
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout"  class="bloc-img__pic" />
                         <p class="bloc-img__new">Nouveau</p>
+                        </a>
                         </div>
                         <div class="restau-description">
-                            <div class="description">    
+                            <div class="description">
+                            <a href="menus/palette.html" class="card-restau__link">   
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
+                            </a>
                             </div>
                             <div class="favorite">
-                            <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
                             </div>
                         </div>
-                    </a>
                 </article>
                 <article class="card-restau">
-                    <a href="#" class="card-restau__link">
                         <div class="bloc-img">
+                        <a href="menus/palette.html" class="card-restau__link"> 
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"  class="bloc-img__pic" />
                         <p class="bloc-img__new">Nouveau</p>
+                        </a>
                         </div>
                         <div class="restau-description">
-                            <div class="description">    
+                            <div class="description"> 
+                            <a href="menus/palette.html" class="card-restau__link">    
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>
+                            </a>
                             </div>
                             <div class="favorite">
                             <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                             </div>
                         </div>
-                    </a>
                 </article>
                 <article class="card-restau">
-                    <a href="#" class="card-restau__link">
                         <div class="bloc-img">
+                        <a href="menus/palette.html" class="card-restau__link"> 
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la france"  class="bloc-img__pic" />
+                        </a>
                         </div>
                         <div class="restau-description">
-                            <div class="description">    
+                            <div class="description">  
+                            <a href="menus/palette.html" class="card-restau__link">   
                             <h3>À la française</h3>
                             <p>Cité Rouge</p>
+                            </a>
                             </div>
                             <div class="favorite">
                             <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                             </div>
                         </div>
-                    </a>
                 </article>
                 <article class="card-restau">
-                    <a href="#" class="card-restau__link">
                         <div class="bloc-img">
+                        <a href="menus/palette.html" class="card-restau__link"> 
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"  class="bloc-img__pic" />
+                        </a>
                         </div>
                         <div class="restau-description">
-                        <div class="description">    
+                        <div class="description"> 
+                        <a href="menus/palette.html" class="card-restau__link">    
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
+                        </a>
                         </div>
                         <div class="favorite">
                         <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
                         </div>
                        </div>
-                    </a>
                 </article>
             </section>
         </main>

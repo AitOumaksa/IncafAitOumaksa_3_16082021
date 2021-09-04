@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: initial;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(173deg, #FF79DA 0%, #9356DC 90%);
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 55px;
+  cursor: pointer;
+}
+.btn--taille {
+  align-self: center;
+  margin-top: 35px;
+  width: 48%;
+}
+
+.favorite {
+  cursor: pointer;
+}
+.favorite .fa-heart {
+  font-size: 24px;
+  position: absolute;
+  bottom: 33px;
+  right: 26px;
+}
+.favorite .far {
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+.favorite .far:hover {
+  opacity: 0;
+}
+.favorite .far:hover + .fas {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
+.favorite .fas {
+  background: linear-gradient(63deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
+}
+
+.bloc-bg {
+  height: 250px;
+  width: 100%;
+}
+.bloc-bg__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer h2 {
+  font-family: "shrikhand";
+}
+
+.footer {
+  background-color: #353535;
+  height: 200px;
+  padding: 20px 20px 0 20px;
+}
+.footer__heading {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.footer .footer-list {
+  line-height: 1.5;
+}
+.footer .footer-list li a {
+  color: #fff;
+}
+.footer .footer-list li a i {
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  height: 65px;
+  width: 100%;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.header__logo {
+  height: 28px;
+}
+.header__icone {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -45px;
+  margin-bottom: -45px;
+  background-color: #f6f6f6;
+  border-radius: 45px 45px 0 0;
+}
+.section-menu .heading-restaurant {
+  white-space: nowrap;
+  font-family: "shrikhand", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  padding: 35px 35px 0 20px;
+}
+.section-menu .heading-restaurant h1 {
+  font-size: 28px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-menu .heading-restaurant .favorite i {
+  font-size: 20px;
+}
+.section-menu .menu {
+  padding: 35px 10px 0 10px;
+}
+.section-menu .menu__type {
+  font-weight: 300;
+  color: #464646;
+  font-size: 15px;
+  position: relative;
+}
+.section-menu .menu__type::before {
+  content: "";
+  position: absolute;
+  background-color: #99E2D0;
+  top: 20px;
+  height: 3px;
+  width: 37px;
+}
+.section-menu .menu .choice {
+  overflow: hidden;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 20px 10px 15px;
+  margin: 20px 0 15px 0;
+  position: relative;
+}
+.section-menu .menu .choice:hover > .menu-check {
+  transform: translateX(0px);
+}
+.section-menu .menu .choice:hover .ingredient .menu-price {
+  margin-right: 60px;
+}
+.section-menu .menu .choice__title {
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+.section-menu .menu .choice .ingredient {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 15px;
+}
+.section-menu .menu .choice .ingredient__type {
+  flex: 1;
+  font-weight: 300;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-menu .menu .choice .ingredient .menu-price {
+  font-weight: bold;
+  transition: margin 0.3s linear;
+}
+.section-menu .menu .choice .menu-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 60px;
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 15px 0;
+  transform: translateX(60px);
+  transition: transform 0.3s linear;
+  transform-origin: right;
+}
+.section-menu .menu .choice .menu-check__icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=restaurant.css.map */
