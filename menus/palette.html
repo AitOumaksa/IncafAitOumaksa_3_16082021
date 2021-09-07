@@ -13,23 +13,44 @@
         <title>La palette du goût</title>
     </head>
     <body>
+                <!-- Spinner-->
+    <div class="loading-spinner">
+        <div class="spinner">
+        <div class="spinner__letter">
+                <span class="letter01">o</span>
+                <span class="letter02">h</span>
+                <span class="letter03">m</span>
+                <span class="letter04">y</span>
+                <span class="letter05">f</span>
+                <span class="letter06">o</span>
+                <span class="letter07">o</span>
+                <span class="letter08">d</span>
+        </div>
+        <div class="spinner__circle"></div>
+    </div>
+    </div>
+    <!--header-->
         <header class="header">
             <div class="header__icone">
             <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
             </div>
             <img src="../images/logo/ohmyfood.png" alt="Logo ohmyfood" class="header__logo" />
         </header>
+        <!--main-->
         <main class="main-menu">  
             <div class="bloc-bg"><img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Banniére La palette de gout"  class="bloc-bg__img"/></div>
             <section class="section-menu">
                 <div class="heading-restaurant">
+                    <!--titre principale-->
                 <h1 class="heading-restaurant__h1">La palette du goût</h1>
                 <div class="heart">
                 <i class=" far fa-heart"></i>
                 </div>
                 </div>
-                <div class="menu">
+            <div class="menu">
+                <!--les plat d'entér-->
                     <h2 class="menu__type">ENTRÉES</h2>
+                 <div class="choice-anim choice01">
                     <div class="choice">
                         <h3 class="choice__title">Fricassée d'escargot</h3>
                         <div class="ingredient">
@@ -38,7 +59,7 @@
                         </div>
                         <div class="menu-check menu-check--check">
                             <i class="menu-check__icon fas fa-check-circle"></i>
-                        </div> 
+                        </div>
                     </div>
                     <div class="choice">
                         <h3 class="choice__title">Foie gras de canard mi-cuit</h3>
@@ -61,8 +82,11 @@
                         </div> 
                     </div>
                 </div>
+            </div>
                 <div class="menu">
+                    <!--plat principal-->
                     <h2 class="menu__type">PLATS</h2>
+                <div class="choice-anim choice02">
                     <div class="choice">
                         <h3 class="choice__title">Filet de boeuf aux herbes</h3>
                         <div class="ingredient">
@@ -79,6 +103,7 @@
                          <p class="ingredient__type">À la truffe noire sur sa purée de panais</p>
                          <div class="menu-price">35€</div>
                         </div>
+                        <!--button de validation -->
                         <div class="menu-check">
                             <i class="menu-check__icon fas fa-check-circle"></i>
                         </div> 
@@ -89,19 +114,24 @@
                          <p class="ingredient__type">Aux agrumes</p>
                          <div class="menu-price">44€</div>
                         </div>
+                        <!--button de validation-->
                         <div class="menu-check">
                             <i class="menu-check__icon fas fa-check-circle"></i>
                         </div> 
                     </div>
                 </div>
+                </div>
                 <div class="menu">
+                    <!--dessert-->
                     <h2 class="menu__type">DESSERTS</h2>
+                <div class="choice-anim choice03">
                     <div class="choice">
                         <h3 class="choice__title">Paris-Brest</h3>
                         <div class="ingredient">
                          <p class="ingredient__type">Revisité</p>
                          <div class="menu-price">18€</div>
                         </div>
+                        <!--button de validation-->
                         <div class="menu-check">
                             <i class="menu-check__icon fas fa-check-circle"></i>
                         </div> 
@@ -112,6 +142,7 @@
                          <p class="ingredient__type">Et glace à la vanille de Madagascar</p>
                          <div class="menu-price">22€</div>
                         </div>
+                        <!--buttton de validation-->
                         <div class="menu-check">
                             <i class="menu-check__icon fas fa-check-circle"></i>
                         </div> 
@@ -127,9 +158,12 @@
                         </div> 
                     </div>
                 </div>
+                </div>
+                <!--button de commande-->
                 <button class="btn btn--taille">Commander</button>
             </section>
         </main>
+        <!--footer-->
         <footer class="footer">
             <h2 class="footer__heading">Ohmyfood</h2>
             <ul class="footer-list">

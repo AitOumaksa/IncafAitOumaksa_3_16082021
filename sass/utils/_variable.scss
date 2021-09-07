@@ -21,3 +21,7 @@ $animation-leter-duration: 1s;
 $animation-spinner-duration : 3s;
 $num-char-resto:8;
 $animation-leter-delay: math.div($animation-leter-duration, $num-char-resto);
+//variable animation affichage de menu 
+$anim-duration-affich: 3.8s;
+$anim-num-choice:3;
+$anim-delay-affich:math.div($anim-duration-affich,$anim-num-choice);

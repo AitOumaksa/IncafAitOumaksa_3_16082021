@@ -5,7 +5,7 @@
   z-index: 3;
   height: 100%;
   width: 100%;
-  background : $colour-primary;
+  background :darken($colour-bg, 10%);
   animation: loader-page $animation-spinner-duration ease-in-out normal forwards;
 
   .spinner{
@@ -19,7 +19,9 @@
     height: 120px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #5486a8;
+    border-top: 16px solid $colour-primary;
+    border-right: $colour-secondary 16px solid;
+    border-left: $colour-Tertiary 16px solid;
     animation: spin 2s linear infinite;
   }
 
@@ -29,17 +31,13 @@
     //text-align:center; 
     white-space:normal; 
     font-weight:300; 
-    background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); 
+    background:linear-gradient(75deg, $colour-primary,$colour-secondary,$colour-Tertiary); 
     color:transparent; 
     background-clip:text; 
     /* Animations des lettres */
    
      span {opacity:0;}
-     @for $i from 1 through $num-char-resto  {
-    .letter0#{$i} {animation:letters $animation-leter-duration ease ($i - 1) * $animation-leter-delay forwards infinite;}
-     }
   }
-
 }
 }
   @keyframes spin {

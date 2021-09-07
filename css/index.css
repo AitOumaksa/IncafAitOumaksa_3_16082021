@@ -1,4 +1,48 @@
 @charset "UTF-8";
+.letter01 {
+  animation: letters 1s ease 0s forwards infinite;
+}
+
+.letter02 {
+  animation: letters 1s ease 0.125s forwards infinite;
+}
+
+.letter03 {
+  animation: letters 1s ease 0.25s forwards infinite;
+}
+
+.letter04 {
+  animation: letters 1s ease 0.375s forwards infinite;
+}
+
+.letter05 {
+  animation: letters 1s ease 0.5s forwards infinite;
+}
+
+.letter06 {
+  animation: letters 1s ease 0.625s forwards infinite;
+}
+
+.letter07 {
+  animation: letters 1s ease 0.75s forwards infinite;
+}
+
+.letter08 {
+  animation: letters 1s ease 0.875s forwards infinite;
+}
+
+.choice01 {
+  animation: affichage 3.8s ease 0s forwards;
+}
+
+.choice02 {
+  animation: affichage 3.8s ease 1.2666666667s forwards;
+}
+
+.choice03 {
+  animation: affichage 3.8s ease 2.5333333333s forwards;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +67,10 @@ body {
   font-weight: 300;
   margin-bottom: 55px;
   cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.35);
 }
 .btn--taille {
   align-self: center;
@@ -147,97 +195,6 @@ body {
   padding-bottom: 25px;
 }
 
-.loading-spinner {
-  position: fixed;
-  z-index: 3;
-  height: 100%;
-  width: 100%;
-  background: #9356DC;
-  animation: loader-page 3s ease-in-out normal forwards;
-}
-.loading-spinner .spinner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -76px 0 0 -76px;
-  /* Réglages du bloc de texte général */
-}
-.loading-spinner .spinner .spinner__circle {
-  width: 120px;
-  height: 120px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #5486a8;
-  animation: spin 2s linear infinite;
-}
-.loading-spinner .spinner .spinner__letter {
-  font-family: "shrikhand";
-  white-space: normal;
-  font-weight: 300;
-  background: linear-gradient(75deg, #E5E0F9, #C5C7DB, #EAEDF3, #C5D2DB, #E0F6F9);
-  color: transparent;
-  background-clip: text;
-  /* Animations des lettres */
-}
-.loading-spinner .spinner .spinner__letter span {
-  opacity: 0;
-}
-.loading-spinner .spinner .spinner__letter .letter01 {
-  animation: letters 1s ease 0s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter02 {
-  animation: letters 1s ease 0.125s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter03 {
-  animation: letters 1s ease 0.25s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter04 {
-  animation: letters 1s ease 0.375s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter05 {
-  animation: letters 1s ease 0.5s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter06 {
-  animation: letters 1s ease 0.625s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter07 {
-  animation: letters 1s ease 0.75s forwards infinite;
-}
-.loading-spinner .spinner .spinner__letter .letter08 {
-  animation: letters 1s ease 0.875s forwards infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader-page {
-  0% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@keyframes letters {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 footer h2 {
   font-family: "shrikhand";
 }
@@ -283,6 +240,75 @@ footer h2 {
   bottom: 15px;
 }
 
+.loading-spinner {
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  background: #dddddd;
+  animation: loader-page 3s ease-in-out normal forwards;
+}
+.loading-spinner .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -76px 0 0 -76px;
+  /* Réglages du bloc de texte général */
+}
+.loading-spinner .spinner .spinner__circle {
+  width: 120px;
+  height: 120px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: #FF79DA 16px solid;
+  border-left: #99E2D0 16px solid;
+  animation: spin 2s linear infinite;
+}
+.loading-spinner .spinner .spinner__letter {
+  font-family: "shrikhand";
+  white-space: normal;
+  font-weight: 300;
+  background: linear-gradient(75deg, #9356DC, #FF79DA, #99E2D0);
+  color: transparent;
+  background-clip: text;
+  /* Animations des lettres */
+}
+.loading-spinner .spinner .spinner__letter span {
+  opacity: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-page {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes letters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section-restau {
   display: flex;
   flex-flow: row wrap;
