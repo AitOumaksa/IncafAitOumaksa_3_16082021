@@ -17,11 +17,12 @@ $size:50%;
 
 
 //variables spinner
-$animation-leter-duration: 1s;
+
 $animation-spinner-duration : 3s;
+$animation-leter-duration: 1s;
 $num-char-resto:8;
 $animation-leter-delay: math.div($animation-leter-duration, $num-char-resto);
+
 //variable animation affichage de menu 
-$anim-duration-affich: 3.8s;
+$anim-duration-affich: 1s;
 $anim-num-choice:3;
-$anim-delay-affich:math.div($anim-duration-affich,$anim-num-choice);
