@@ -70,7 +70,7 @@ body {
 }
 .btn:hover {
   opacity: 0.8;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.4);
 }
 .btn--taille {
   align-self: center;
