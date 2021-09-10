@@ -55,11 +55,11 @@
             grid-template: repeat(2,auto)/repeat(3,1fr);
             column-gap: 15px;    
         }
-        }
         .choice{
             @media screen and (min-width: 768px){
              width:100%;
             }
+            cursor: pointer;
             overflow: hidden;
             box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 8%);
             background-color: white;
@@ -106,6 +106,7 @@
                  color: $colour-txt-btn;
              }
             }
+        }
         }
     }
 }

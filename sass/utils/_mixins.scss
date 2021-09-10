@@ -64,7 +64,6 @@
 @mixin Btn-validation {
     &:hover >.menu-check{ 
         transform: translateX(0px);
-        cursor: pointer;
         & > .menu-check__icon{
             transform:rotate(0deg);
         }

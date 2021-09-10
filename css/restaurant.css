@@ -144,7 +144,6 @@ body {
 }
 .choice:hover > .menu-check {
   transform: translateX(0px);
-  cursor: pointer;
 }
 .choice:hover > .menu-check > .menu-check__icon {
   transform: rotate(0deg);
@@ -341,7 +340,8 @@ footer h2 {
     column-gap: 15px;
   }
 }
-.section-menu .menu .choice {
+.section-menu .menu .choice-anim .choice {
+  cursor: pointer;
   overflow: hidden;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
   background-color: white;
@@ -351,23 +351,23 @@ footer h2 {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .section-menu .menu .choice {
+  .section-menu .menu .choice-anim .choice {
     width: 100%;
   }
 }
-.section-menu .menu .choice__title {
+.section-menu .menu .choice-anim .choice__title {
   padding-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 18px;
 }
-.section-menu .menu .choice .ingredient {
+.section-menu .menu .choice-anim .choice .ingredient {
   display: flex;
   justify-content: space-around;
   column-gap: 15px;
 }
-.section-menu .menu .choice .ingredient__type {
+.section-menu .menu .choice-anim .choice .ingredient__type {
   flex: 1;
   font-weight: 300;
   font-size: 15px;
@@ -375,10 +375,10 @@ footer h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section-menu .menu .choice .ingredient .menu-price {
+.section-menu .menu .choice-anim .choice .ingredient .menu-price {
   font-weight: bold;
 }
-.section-menu .menu .choice .menu-check {
+.section-menu .menu .choice-anim .choice .menu-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,7 +390,7 @@ footer h2 {
   right: 0;
   border-radius: 0 15px 15px 0;
 }
-.section-menu .menu .choice .menu-check__icon {
+.section-menu .menu .choice-anim .choice .menu-check__icon {
   font-size: 20px;
   color: #fff;
 }
