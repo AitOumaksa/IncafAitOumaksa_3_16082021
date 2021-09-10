@@ -77,6 +77,11 @@ body {
   margin-top: 35px;
   width: 48%;
 }
+@media screen and (min-width: 768px) {
+  .btn--taille {
+    width: 195px;
+  }
+}
 
 .favorite {
   cursor: pointer;
@@ -138,6 +143,11 @@ body {
   background-color: #f6f6f6;
   position: relative;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .section-function .function-list__list {
+    width: 330px;
+  }
 }
 .section-function .function-list__list::before {
   content: counter(numero);
@@ -317,9 +327,20 @@ footer h2 {
   gap: 25px;
   padding: 45px 20px 45px 20px;
 }
+@media screen and (min-width: 900px) {
+  .section-restau {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, 1fr);
+  }
+}
 .section-restau__heading {
   flex: 100%;
   font-size: 20px;
+}
+@media screen and (min-width: 900px) {
+  .section-restau__heading {
+    grid-column: span 2;
+  }
 }
 .section-restau .card-restau {
   position: relative;
@@ -329,6 +350,16 @@ footer h2 {
   height: 250px;
   width: 100%;
   box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 768px) {
+  .section-restau .card-restau {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section-restau .card-restau {
+    width: 100%;
+  }
 }
 .section-restau .card-restau .bloc-img {
   position: relative;

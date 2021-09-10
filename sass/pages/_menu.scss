@@ -23,7 +23,7 @@
            overflow: hidden;
            text-overflow: ellipsis;
        }
-       .favorite i{
+       .heart i{
            font-size: 20px;
        }
     }
@@ -43,14 +43,23 @@
                 width: 37px
             }
         }
+        .choice-anim{
+            @media screen and (min-width: 768px){
+            display: grid;
+            grid-template: repeat(2,auto)/repeat(2,1fr);
+            column-gap: 15px;
+            
+        }
+        @media screen and (min-width: 900px){
+            display: grid;
+            grid-template: repeat(2,auto)/repeat(3,1fr);
+            column-gap: 15px;    
+        }
+        }
         .choice{
-            &:hover >.menu-check{ 
-                transform: translateX(0px);
-            } 
-            &:hover .ingredient .menu-price{ 
-                margin-right: 60px;
-            } 
-         
+            @media screen and (min-width: 768px){
+             width:100%;
+            }
             overflow: hidden;
             box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 8%);
             background-color: white;
@@ -79,7 +88,6 @@
                 }
                 .menu-price{
                     font-weight: bold;
-                    transition: margin .3s linear ;
                 }
             }
             .menu-check{
@@ -93,9 +101,6 @@
              top: 0;
              right: 0;
              border-radius: 0 15px 15px 0;
-             transform: translateX(60px);
-             transition: transform .3s linear ;
-             transform-origin: right;
              &__icon{
                  font-size: 20px;
                  color: $colour-txt-btn;

@@ -12,6 +12,9 @@
     gap:25px;
     counter-reset: numero;
     &__list{
+        @media screen and (min-width: 768px){
+            width: 330px;
+        }
         counter-increment: numero;
         display: flex;
         align-self:center ;

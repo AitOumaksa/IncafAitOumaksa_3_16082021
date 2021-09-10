@@ -18,6 +18,9 @@
     margin-bottom: 55px;
     cursor: pointer;
     &--taille{
+        @media screen and (min-width: 768px){
+            width: 195px;
+        }
         align-self: center;
         margin-top: 35px;
         width:48%
@@ -55,5 +58,26 @@
         transform-origin: 50% bottom;
         transform: scale(1);
         animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
+    }
+}
+//btn validation
+@mixin Btn-validation {
+    &:hover >.menu-check{ 
+        transform: translateX(0px);
+        cursor: pointer;
+    } 
+    &:hover .ingredient .menu-price{ 
+        margin-right: 60px;
+    } 
+    &:hover .choice__title{ 
+        margin-right: 60px;
+    }
+    .ingredient >.menu-price{ 
+        transition: margin .3s linear ;
+    }
+    .menu-check{
+        transform: translateX(60px);
+        transition: transform .3s linear ;
+        transform-origin: right;
     }
 }

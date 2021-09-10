@@ -77,6 +77,11 @@ body {
   margin-top: 35px;
   width: 48%;
 }
+@media screen and (min-width: 768px) {
+  .btn--taille {
+    width: 195px;
+  }
+}
 
 .favorite {
   cursor: pointer;
@@ -137,6 +142,25 @@ body {
     transform: scaleY(1);
   }
 }
+.choice:hover > .menu-check {
+  transform: translateX(0px);
+  cursor: pointer;
+}
+.choice:hover .ingredient .menu-price {
+  margin-right: 60px;
+}
+.choice:hover .choice__title {
+  margin-right: 60px;
+}
+.choice .ingredient > .menu-price {
+  transition: margin 0.3s linear;
+}
+.choice .menu-check {
+  transform: translateX(60px);
+  transition: transform 0.3s linear;
+  transform-origin: right;
+}
+
 footer h2 {
   font-family: "shrikhand";
 }
@@ -277,7 +301,7 @@ footer h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section-menu .heading-restaurant .favorite i {
+.section-menu .heading-restaurant .heart i {
   font-size: 20px;
 }
 .section-menu .menu {
@@ -297,6 +321,20 @@ footer h2 {
   height: 3px;
   width: 37px;
 }
+@media screen and (min-width: 768px) {
+  .section-menu .menu .choice-anim {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, 1fr);
+    column-gap: 15px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section-menu .menu .choice-anim {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(3, 1fr);
+    column-gap: 15px;
+  }
+}
 .section-menu .menu .choice {
   overflow: hidden;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
@@ -306,11 +344,10 @@ footer h2 {
   margin: 20px 0 15px 0;
   position: relative;
 }
-.section-menu .menu .choice:hover > .menu-check {
-  transform: translateX(0px);
-}
-.section-menu .menu .choice:hover .ingredient .menu-price {
-  margin-right: 60px;
+@media screen and (min-width: 768px) {
+  .section-menu .menu .choice {
+    width: 100%;
+  }
 }
 .section-menu .menu .choice__title {
   padding-bottom: 5px;
@@ -334,7 +371,6 @@ footer h2 {
 }
 .section-menu .menu .choice .ingredient .menu-price {
   font-weight: bold;
-  transition: margin 0.3s linear;
 }
 .section-menu .menu .choice .menu-check {
   display: flex;
@@ -347,9 +383,6 @@ footer h2 {
   top: 0;
   right: 0;
   border-radius: 0 15px 15px 0;
-  transform: translateX(60px);
-  transition: transform 0.3s linear;
-  transform-origin: right;
 }
 .section-menu .menu .choice .menu-check__icon {
   font-size: 20px;
