@@ -146,6 +146,9 @@ body {
   transform: translateX(0px);
   cursor: pointer;
 }
+.choice:hover > .menu-check > .menu-check__icon {
+  transform: rotate(0deg);
+}
 .choice:hover .ingredient .menu-price {
   margin-right: 60px;
 }
@@ -159,6 +162,10 @@ body {
   transform: translateX(60px);
   transition: transform 0.3s linear;
   transform-origin: right;
+}
+.choice .menu-check__icon {
+  transform: rotate(-360deg);
+  transition: transform 0.7s;
 }
 
 footer h2 {
