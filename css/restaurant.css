@@ -239,6 +239,7 @@ footer h2 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   /* Animations des lettres */
 }
 .loading-spinner .spinner .spinner__letter span {
