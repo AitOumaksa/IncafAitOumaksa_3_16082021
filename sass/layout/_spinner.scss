@@ -13,7 +13,7 @@
     left: 50%;
     top: 50%;
     margin: -76px 0 0 -76px;
-.spinner__circle {
+   &__circle {
     width: 120px;
     height: 120px;
     border: 16px solid #f3f3f3;
@@ -25,7 +25,7 @@
   }
 
   /* Réglages du bloc de texte général */
-  .spinner__letter { 
+   &__letter { 
     font-family: "shrikhand";
     //text-align:center; 
     white-space:normal; 
