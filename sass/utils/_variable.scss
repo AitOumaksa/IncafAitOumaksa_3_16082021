@@ -28,13 +28,5 @@ $animation-leter-delay: math.div($animation-leter-duration, $num-char-resto);
 $anim-duration-affich: 1s;
 $anim-num-choice:3;
 
-//boucles d'animation de loader
-@for $i from 1 through $num-char-resto  {
-    .letter0#{$i} {animation:letters $animation-leter-duration ease ($i - 1) * $animation-leter-delay forwards infinite;}
-     }
 
-//boucle animation d'affichage des menu
-@for $i from 1 through $anim-num-choice  {
-    .choice0#{$i} {animation:affichage $anim-duration-affich ease ($i - 1) * $anim-duration-affich + $animation-spinner-duration forwards;}
-} 
 

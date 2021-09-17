@@ -2,3 +2,22 @@
    cursor: pointer;
     @include heart-anim;
 }
+@keyframes heart-full{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes heart-hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+       opacity: 0;
+        
+    }
+}

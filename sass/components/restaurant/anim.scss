@@ -1,4 +1,7 @@
-
+ //boucle animation d'affichage des menu
+@for $i from 1 through $anim-num-choice  {
+    .choice0#{$i} {animation:affichage $anim-duration-affich ease ($i - 1) * $anim-duration-affich + $animation-spinner-duration forwards;}
+  } 
 //animation affichage de menu
 .choice-anim{ 
     transform-origin: top;
