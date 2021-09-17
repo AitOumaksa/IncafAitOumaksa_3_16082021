@@ -5,15 +5,13 @@
 //animation affichage de menu
 .choice-anim{ 
     transform-origin: top;
-    opacity: 0;
+    transform: scaleY(0);
 }
 @keyframes affichage{
     0%{
-        opacity: 0;
        transform: scaleY(0);
     }
     100%{
-        opacity: 1;
         transform: scaleY(1);
     }
 } 
