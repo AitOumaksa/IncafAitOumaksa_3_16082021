@@ -39,7 +39,7 @@
         z-index: 2;
         opacity: 1;
         &:hover{
-            animation: heart-hide 0.5s steps(1, jump-end) forwards;
+            animation: heart-hide 0.5s steps(1, end) forwards;
             + .fas{
                 animation: heart-full 0.5s linear forwards; 
             }

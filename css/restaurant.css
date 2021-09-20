@@ -53,7 +53,7 @@ body {
   opacity: 1;
 }
 .favorite .far:hover {
-  animation: heart-hide 0.5s steps(1, jump-end) forwards;
+  animation: heart-hide 0.5s steps(1, end) forwards;
 }
 .favorite .far:hover + .fas {
   animation: heart-full 0.5s linear forwards;
